@@ -113,7 +113,7 @@ export default defineComponent({
       state.open = !state.open;
     }
 
-    function onClick(data: Data): void {
+    function onClick(data: Data|ItemData): void {
       context.emit("selected", {
         key: data.key,
         value: data.value,
